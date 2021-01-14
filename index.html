@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    /* Dark cyan: hsl(185, 75%, 39%) 
+    Very dark desaturated blue: hsl(229, 23%, 23%) 
+    Dark grayish blue: hsl(227, 10%, 46%) 
+    Dark gray: hsl(0, 0%, 59%) */
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .challenge{
+      position: relative;
+      font-family: 'Kumbh Sans', sans-serif;
+      background: linear-gradient(hsl(227, 10%, 46%),  hsl(185, 75%, 39%));
+      height: calc(100vh - 15px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    h2,h3,h4,h5,h6{
+      font-weight: 700;
+    }
+    small{
+      font-weight: 400;
+      color: hsl(0, 0%, 59%);
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+    .relative{
+      position: relative;
+      border: 1px solid black;
+    }
+    .bg-circle-top, .bg-circle-bottom{
+      position: absolute;
+    }
+    .bg-circle-top{
+      right: 50%;
+      bottom: 35%;
+    }
+    .bg-circle-bottom{
+      top: 50%;
+      left: 45%;
+    }
+    .challenge-card{
+      border-radius: 20px;
+      width: 300px;
+      height: 340px;
+      background-color: white;
+      z-index: 88;
+    }
+    .image-box{
+      position: relative;
+      text-align: center;
+      height: 40%;
+      background: url(./images/bg-pattern-card.svg);
+      border-radius: 20px 20px 0px 0px;
+      margin-bottom: 60px;
+    }
+    .image-box img{
+      position: absolute;
+      bottom: -38%;
+      right: 32%;
+      border-radius: 50%;
+      border: 5px solid white;
+    }
+    .card-info{
+      text-align: center;
+    }
+    .card-name{
+      font-weight: 700;
+    }
+    .card-age{
+      font-weight: 400;
+      color: hsl(0, 0%, 59%);
+    }
+    .card-place{
+      margin-top: 10px;
+      font-weight: 700;
+      color: hsl(0, 0%, 59%);
+    }
+    .card-stats{
+      display: flex;
+      text-align: center;
+      justify-content: space-evenly;
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px solid hsl(0, 0%, 59%);
+    }
+  </style>
+</head>
+<body>
+  <div class="challenge">
+    <!-- <div class="relative">
+    </div> -->
+    <img src="./images/bg-pattern-top.svg" alt="" class="bg-circle-top">
+    
+    <div class="challenge-card">
+      <div class="image-box">
+        <img src="./images/image-victor.jpg" alt="" class="">
+      </div>
+      <div class="card-info">
+        <h4 class="card-name">Victor Crest <span class="card-age">26</span></h4>
+        <h5 class="card-place">London</h5>
+      </div>
+      <div class="card-stats">
+        <div class="">
+          <h4 class="">80K</h4>
+          <small class="">Followers</small>
+        </div>
+        <div class="">
+          <h4 class="">803K</h4>
+          <small class="">Likes</small>
+        </div>
+        <div class="">
+          <h4 class="">1.4K</h4>
+          <small class="">Photos</small>
+        </div>
+      </div>
+    </div>
+    
+    <img src="./images/bg-pattern-bottom.svg" alt="" class="bg-circle-bottom">    
+    
+    <!-- <div class="relative"> 
+    </div> -->
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://akshayr.netlify.app">Akshay Rajput</a>.
+  </div>
+</body>
+</html>
